@@ -1,0 +1,308 @@
+/* The home route keeps its cinematic camera and restores warm, readable dark surfaces.
+   Ink and cream retain their semantic meaning; photographs keep natural color. */
+.story-experience {
+  --sc-tempo: .72;
+  --story-stage: 100svh;
+  --story-ivory: #f7f3eb;
+  --story-surface: #21241e;
+  --story-stone: #292d25;
+  --story-champagne: #d6b77d;
+  --story-sage: #292d25;
+  --story-ink: #151613;
+  --story-body: #e0e2d8;
+  --story-secondary: #c5cabc;
+  --story-brass: #d6b77d;
+  --line-gold: rgba(214,183,125,.35);
+  --line-hair: rgba(247,243,235,.22);
+  color: var(--story-body);
+  background: var(--story-ink);
+}
+.story-experience .scene { position:relative;scroll-margin-top:0; }
+.story-experience .scene.is-animated { height:calc((1 + var(--sc-len,1.6)*var(--sc-tempo))*var(--story-stage)); }
+.story-experience .scene.is-animated .scene-stage { position:sticky;top:0;height:var(--story-stage);overflow:hidden;perspective:var(--sc-persp,1200px); }
+.story-experience .scene.is-animated .scene-camera { height:100%;transform-style:preserve-3d; }
+.story-experience .scene.is-animated .sc-layer { position:absolute;inset:0;aspect-ratio:auto;backface-visibility:hidden; }
+.story-experience .scene:not(.is-animated) .scene-stage { position:static;height:auto;perspective:none; }
+.story-experience .scene:not(.is-animated) .scene-camera { height:auto;transform:none; }
+.story-experience .scene:not(.is-animated) .sc-layer { position:static!important;opacity:1!important;visibility:visible!important;transform:none!important;clip-path:none!important; }
+.story-experience .scene:not(.is-animated) .sc-fx { display:none!important; }
+.story-experience .sc-fx { pointer-events:none; }
+.story-experience .tc-line { display:block;overflow:hidden;padding-bottom:.09em;margin-bottom:-.09em; }
+.story-experience .tc-line>span { display:block;transform-origin:bottom center; }
+.story-experience .engraved { color:var(--story-ivory);background:none;filter:none;text-shadow:none; }
+.story-experience .engraved-flat { filter:none;text-shadow:none; }
+.story-experience .engraved-sweep { background-size:220% 100%; }
+.story-experience .text-plate { position:relative;text-shadow:none; }
+.story-experience .text-plate:before { display:none; }
+.story-experience .flute { background-image:repeating-linear-gradient(90deg,var(--line-gold) 0 1px,transparent 1px 7px); }
+.story-experience .kicker { font-size:12px;margin-bottom:1.2rem;letter-spacing:.2em;line-height:1.6;color:var(--story-brass); }
+.story-experience .kb { animation:story-kb 18s linear infinite alternate;transform-origin:62% 38%; }
+.story-experience .kb-b { animation-duration:21s;transform-origin:40% 50%; }
+.story-experience .kb-c { animation-duration:24s;transform-origin:50% 62%; }
+@keyframes story-kb { from{transform:scale(1)}to{transform:scale(1.05) rotate(.35deg) translate3d(-1%,-.6%,0)} }
+html.lenis { scroll-behavior:auto; }
+.story-active body:after { content:"";position:fixed;inset:0;z-index:25;pointer-events:none;background:url(/assets/tex/grain-128.png) repeat;opacity:.018;mix-blend-mode:overlay; }
+.story-active.tier-a body:after { display:none; }
+
+/* Arrival: continuous dark photo gradients support readable cream type. */
+.story-experience .hero-media { position:relative;inset:auto;z-index:auto;transform-origin:50% 40%; }
+.story-experience .hero-media video { object-position:50% 40%; }
+.story-experience .hero-film-wash { background:linear-gradient(90deg,#151613df 0%,#1516138c 42%,#15161314 85%); }
+.story-experience .hero-floor-wash { background:linear-gradient(0deg,#151613f2 0%,#15161370 30%,transparent 68%); }
+.story-experience .hero-facade-wash { background:linear-gradient(90deg,#151613db,#15161370 42%,transparent 82%),linear-gradient(0deg,#151613e8,transparent 58%); }
+.story-experience .hero-card { position:absolute;top:0;left:0;right:0; }
+.story-experience .hero-card h2 { font-size:clamp(28px,3.8vw,48px); }
+.story-experience .hero-content { padding-bottom:36px;color:var(--story-ivory); }
+.story-experience .hero-content h1 { font-size:clamp(58px,7.8vw,112px);line-height:.98; }
+.story-experience .hero-content h1 .engraved { color:var(--story-brass); }
+.story-experience .hero-content .hero-sub { max-width:570px;font-size:15px;line-height:1.8; }
+.story-experience .hero-exit { top:23%; }
+.story-experience .hero-exit p { font-size:clamp(30px,4vw,50px); }
+.story-experience .hero-booking { max-width:1280px; }
+.story-experience .hero-call { min-width:235px;font-size:13px;background:#151613ed;border-color:#b295645c;color:var(--story-ivory);backdrop-filter:none; }
+.story-experience .hero-call:hover { background:var(--story-champagne); }
+.story-experience .hero-call>span:first-child { color:var(--story-brass); }
+.story-experience .hero-frame { opacity:.65;border-color:#d6b77d66; }
+.story-video-control { position:absolute;top:108px;right:32px;z-index:5;display:grid;place-items:center;min-width:46px;min-height:46px;border:1px solid #d6b77d80;border-radius:50%;background:#151613e8;color:var(--story-ivory);font-family:var(--font-sans);font-size:12px; }
+.story-experience .scene:not(.is-animated).story-hero { min-height:800px;isolation:isolate; }
+.story-experience .scene:not(.is-animated).story-hero .hero-shot { position:absolute!important;inset:0;z-index:0;height:100%; }
+.story-experience .scene:not(.is-animated).story-hero .hero-ui { position:relative!important;z-index:1;min-height:800px; }
+.story-experience .scene:not(.is-animated).story-hero .hero-ui>div { min-height:800px; }
+.story-experience .scene:not(.is-animated).story-hero .hero-facade,
+.story-experience .scene:not(.is-animated).story-hero .hero-card { display:none; }
+.story-experience .scene:not(.is-animated).story-hero .hero-content { padding-top:150px; }
+
+/* Painted doors and engraved reasons, in warm ink and restrained brass. */
+.story-experience .story-direct,
+.story-experience .story-direct .scene-stage { background:radial-gradient(ellipse at 85% 10%,#272e24,transparent 65%),linear-gradient(130deg,#151613,#29261f); }
+.story-experience .ch3-door-l,
+.story-experience .ch3-door-r { border-color:#ac895a60;box-shadow:inset 0 0 45px #bdaa7a16; }
+.story-experience .ch3-door-l:before,
+.story-experience .ch3-door-r:before { content:"";position:absolute;inset:30px;border:1px solid #a3834d50;box-shadow:inset 0 0 0 10px #d6b77d08; }
+.story-experience .ch3-door-l>span,
+.story-experience .ch3-door-r>span { width:3px;background:var(--story-brass); }
+.story-experience .ch3-veil { background:var(--story-ink); }
+.story-experience .ch3-scrim { background:linear-gradient(90deg,#151613b3,#29261f66); }
+.story-experience .ch3-head { background:none; }
+.story-experience .ch3-head>.text-plate { padding:30px 42px;border:1px solid #c8b79555;background:linear-gradient(115deg,#151613ed,#29261fdb); }
+.story-experience .ch3-plate { border-color:#b6a27a55;background:linear-gradient(125deg,#21241ef7,#22251ff2);box-shadow:none; }
+.story-experience .ch3-plate .engraved { color:var(--story-ivory); }
+.story-experience .ch3-side { padding:28px 30px;border:1px solid #d6c9ae80;background:linear-gradient(120deg,#151613f2,#272e24e6); }
+
+/* A quieter material pause between the camera sequences. */
+.story-experience .story-amenities { background:radial-gradient(ellipse at 95% 18%,#272e24c9,transparent 53%),radial-gradient(ellipse at 5% 85%,#29261fa8,transparent 50%),var(--story-ink); }
+.story-experience .story-amenities .amen-bead>span:first-child { background:var(--story-ink);border-color:#a98a574f; }
+.story-experience .story-amenities .amen-bead svg { stroke:var(--story-brass); }
+.story-experience .story-amenities .amen-glow { opacity:.2; }
+.story-experience .story-amenities li { border-bottom-color:#f7f3eb26; }
+
+/* Quiet rooms: dark door panels, natural photographs and persistent booking. */
+.story-experience .story-rooms,
+.story-experience .story-rooms .scene-stage { background:linear-gradient(135deg,#1c1e19,#23271f); }
+.story-experience .rooms-bg:after { content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 10% 30%,#21241eb3,transparent 65%),radial-gradient(ellipse at 90% 80%,#272e2499,transparent 70%); }
+.story-experience .room-card { border:1px solid #c4bea952;background:var(--story-surface);box-shadow:none; }
+.story-experience .room-photo-wash { background:linear-gradient(0deg,#15161366,transparent 58%); }
+.story-experience .scene.is-animated .room-card>div:first-child { aspect-ratio:16/9; }
+.story-experience .scene.is-animated .room-card>div:last-child { padding:24px; }
+.story-experience .room-cover { border-color:#af936766;background:linear-gradient(110deg,#22251f,#29261f 48%,#21241e); }
+.story-experience .room-cover>div { border-color:#95744255; }
+.story-experience .room-cover>span:first-of-type { background:var(--story-brass); }
+.story-experience .room-cta { opacity:1!important;background:var(--story-champagne);color:var(--story-ink); }
+.story-experience .room-cta:hover { background:#e4c994; }
+.story-experience .rooms-note { color:var(--story-secondary); }
+.tier-c .story-experience .kb { animation:none; }
+
+/* Dark steam gradients protect the copy; the right-hand photography stays clear. */
+.story-experience .story-spa { background:linear-gradient(135deg,#151613,#29261f); }
+.story-experience .spa-photo-wash { background:linear-gradient(90deg,#151613b8,transparent 65%); }
+.story-experience .spa-copy { background:linear-gradient(90deg,#151613f5,#151613e0 33%,#15161352 59%,transparent 76%); }
+.story-experience .spa-copy .engraved { color:var(--story-brass); }
+.story-experience .spa-copy a { color:var(--story-brass); }
+.story-experience .spa-copy a.border { background:#151613b3;border-color:#92734780; }
+.story-experience .spa-copy a.border:hover { background:var(--story-champagne);color:var(--story-ink); }
+.story-experience .spa-ink { background:var(--story-ink); }
+
+/* Look up: cream type and dark information panels preserve the full photograph. */
+.story-experience .story-restaurant { background:var(--story-ink); }
+.story-experience .rt-copy { background:linear-gradient(0deg,transparent 20%,#1516138c 50%,#15161326 72%,transparent); }
+.story-experience .scene.is-animated .rt-open { position:absolute;top:120px;left:5%;right:5%;padding:22px 26px;border:1px solid #c8b79580;background:linear-gradient(125deg,#151613ed,#242b21e8);color:var(--story-ivory);text-shadow:none; }
+.story-experience .scene.is-animated .rt-open .kicker { color:var(--story-brass); }
+.story-experience .scene.is-animated .rt-open .flute { background-image:repeating-linear-gradient(90deg,#9b7d4d80 0 1px,transparent 1px 7px); }
+.story-experience .scene.is-animated .rt-title { position:absolute;top:40%;left:7%;right:7%;color:var(--story-ivory);text-shadow:0 2px 12px #080a0866; }
+.story-experience .rt-end { padding:28px 32px;border:1px solid #c8b79580;background:linear-gradient(125deg,#151613f7,#242b21f2);color:var(--story-ivory); }
+.story-experience .scene.is-animated .rt-end { position:absolute;left:5%;bottom:9%;width:min(650px,90%); }
+.story-experience .rt-end .engraved { color:var(--story-ivory); }
+.story-experience .rt-end a { color:var(--story-brass);border-color:#92734780; }
+.story-experience .rt-end a:hover { background:var(--story-champagne);color:var(--story-ink); }
+.story-experience .scene:not(.is-animated) .rt-copy { padding:55px 5%;background:linear-gradient(130deg,#151613,#242b21); }
+.story-experience .scene:not(.is-animated) .rt-open p { color:var(--story-ivory); }
+.story-experience .scene:not(.is-animated) .rt-end { max-width:760px; }
+
+/* The city unfolds over a muted dark drawing board. */
+.story-experience .story-belgrade,
+.story-experience .story-belgrade .scene-stage { background:radial-gradient(ellipse at 20% 25%,#21241e,transparent 60%),radial-gradient(ellipse at 85% 80%,#29261fad,transparent 65%),linear-gradient(135deg,#242b21,#272e24); }
+.story-experience .bgd-streets { filter:none; }
+.story-experience .bgd-map-label { padding:3px 5px;background:#151613d9;color:var(--story-ivory);text-shadow:none; }
+.story-experience .bgd-pearl>span:first-child { background:var(--story-brass);box-shadow:0 0 10px #c2a36b44; }
+.story-experience .bgd-hotel { fill:var(--story-brass); }
+.story-experience .bgd-window { padding:12px 12px 20px;border:1px solid #b1b9a450;background:linear-gradient(140deg,#21241e,#242b21); }
+.story-experience .bgd-window h3,
+.story-experience .bgd-window p { padding-inline:7px; }
+.story-experience .bgd-window-summary { display:none; }
+.story-experience .bgd-route-preview { display:block;width:100%;height:100%;background:#151613; }
+.story-experience .bgd-preview-streets { filter:brightness(4); }
+.story-experience .bgd-foot { padding-bottom:100px; }
+.story-experience .bgd-foot-in { padding:20px 30px;background:linear-gradient(120deg,#151613ed,#242b21db);border:1px solid #a9b2944d; }
+.story-experience .bgd-foot-in>a { display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding-block:8px; }
+.story-experience .bgd-list { color:var(--story-ivory); }
+.story-experience .bgd-list li { border-color:#f7f3eb26; }
+.story-experience .bgd-legend-heading { max-width:576px;margin:0 auto 8px;color:var(--story-secondary);font-size:12px;line-height:1.5; }
+.story-experience .bgd-list-link { display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:576px;min-height:44px;margin:8px auto 0;border-bottom:1px solid #d6b77d80;color:var(--story-champagne);font-size:13px;line-height:1.5; }
+
+/* Compact social proof: every score and excerpt stays readable in the safe area. */
+.story-experience .story-reviews,
+.story-experience .story-reviews .scene-stage { background:#151613;color:#f7f3eb; }
+.story-experience .story-reviews .j-atmosphere { inset:-5%;background:radial-gradient(ellipse at 12% 75%,#343b2b80,transparent 55%),radial-gradient(ellipse at 88% 20%,#48382066,transparent 50%); }
+.story-experience .story-reviews .j-safe { display:grid;place-items:center;padding:108px 48px 106px; }
+.story-experience .story-reviews .j-layout { display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center;gap:64px;width:min(1160px,100%); }
+.story-experience .story-reviews .j-kicker { margin:0 0 12px;color:#d6b77d;font-size:13px;letter-spacing:.14em; }
+.story-experience .story-reviews .j-title { margin:0;max-width:510px;color:#f7f3eb;font-size:clamp(34px,3.2vw,48px);font-weight:400;line-height:1.12;letter-spacing:-.025em; }
+.story-experience .story-reviews .j-stats { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:26px; }
+.story-experience .story-reviews .j-stat { padding:20px 22px;background:#21241e;border:1px solid #c5cabc38; }
+.story-experience .story-reviews .j-stat p { margin:0; }
+.story-experience .story-reviews .j-stat-label { color:#f7f3eb;font-size:14px;line-height:1.5; }
+.story-experience .story-reviews .j-score { display:flex;align-items:baseline;gap:7px;margin-block:10px 8px!important;line-height:1; }
+.story-experience .story-reviews .j-score-value { color:#f7f3eb;font-size:52px;font-variant-numeric:tabular-nums;line-height:1; }
+.story-experience .story-reviews .j-score-scale { color:#d6b77d;font-size:16px; }
+.story-experience .story-reviews .j-count { color:#e0e2d8;font-size:13px;line-height:1.5; }
+.story-experience .story-reviews .j-snapshot { max-width:490px;margin:15px 0 0;color:#c5cabc;font-size:13px;line-height:1.6; }
+.story-experience .story-reviews .j-direct { margin:16px 0 0;padding-left:13px;border-left:2px solid #d6b77d;color:#d6b77d;font-size:14px;line-height:1.5; }
+.story-experience .story-reviews .j-excerpts-heading { margin:0 0 15px;color:#f7f3eb;font-size:15px;font-weight:400;line-height:1.5; }
+.story-experience .story-reviews .j-quotes { display:grid;gap:14px; }
+.story-experience .story-reviews .j-quote { margin:0;padding:24px 26px;background:#21241e;border:1px solid #c5cabc38;border-left:2px solid #d6b77d; }
+.story-experience .story-reviews .j-quote blockquote { margin:0;color:#f7f3eb;font-size:18px;line-height:1.65; }
+.story-experience .story-reviews .j-quote figcaption { display:flex;justify-content:space-between;gap:12px;margin-top:15px;color:#c5cabc;font-size:13px;line-height:1.5; }
+.story-experience .story-reviews:not(.is-animated) .j-safe { padding-block:72px; }
+/* The open door continues the same warm dark palette. */
+.story-experience .story-closing,
+.story-experience .story-closing .scene-stage { background:radial-gradient(ellipse at 20% 12%,#29261fc9,transparent 60%),radial-gradient(ellipse at 85% 90%,#272e24d9,transparent 60%),var(--story-ink); }
+.story-experience .rz-frame { background:linear-gradient(145deg,#21241ef7,#22251ff2);border-color:#9f7b466b;box-shadow:none; }
+.story-experience .rz-panel-l { background:linear-gradient(110deg,#29261f,#29261f);border-color:#a486554d; }
+.story-experience .rz-panel-r { background:linear-gradient(250deg,#29261f,#29261f);border-color:#a486554d; }
+.story-experience #rezervacija .scene-camera>.sc-layer>div { padding-top:102px;padding-bottom:76px; }
+.story-experience #rezervacija .rz-in h2 { line-height:1.15; }
+.story-experience #rezervacija .rz-in .kicker { margin-bottom:5px; }
+.story-experience #rezervacija .rz-in p.font-display { font-size:20px;line-height:1.35; }
+.story-experience #rezervacija .rz-volute { opacity:.85; }
+.story-experience #rezervacija .rz-volute+span img { width:30px;height:30px; }
+.story-experience #rezervacija .relative.mx-auto.h-32 { width:90px;height:90px; }
+
+/* Compass remains a small, readable instrument on the dark surface. */
+.story-compass { position:fixed;right:24px;bottom:96px;z-index:45; }
+.story-compass-toggle { display:grid;place-items:center;width:54px;height:54px;border:1px solid #9b7d4d80;border-radius:50%;background:#151613f5; }
+.story-compass-toggle svg { width:36px;height:36px; }
+.story-compass-list { position:absolute;bottom:68px;right:0;width:205px;padding:10px 18px;border:1px solid #b5a17b70;background:#151613fa;box-shadow:0 12px 32px #5963471a; }
+.story-compass-list button { display:flex;gap:14px;align-items:center;width:100%;min-height:46px;font-size:13px;text-align:left;color:#f7f3eb; }
+.story-compass-list button span { color:#d6b77d;font-size:12px; }
+.story-compass-list button[aria-current=step] { color:#d6b77d; }
+.tier-c .story-compass { display:none; }
+
+@media(pointer:coarse) { .story-experience .scene.is-animated { height:calc((1 + var(--sc-len,1.6)*.6*var(--sc-tempo))*var(--story-stage)); } }
+@media(max-width:767px) {
+ .story-experience .hero-card { padding-top:110px; }
+ .story-experience .hero-card h2 { font-size:32px; }
+ .story-experience .hero-content { padding-bottom:22px; }
+ .story-experience .hero-content h1 { font-size:clamp(54px,15vw,78px); }
+ .story-experience .hero-content .hero-kicker { font-size:12px; }
+ .story-experience .hero-content .hero-facts { font-size:12px;letter-spacing:.04em;gap:8px 15px; }
+ .story-experience .hero-film-wash { background:linear-gradient(90deg,#151613e6,#1516139c 50%,#15161340); }
+ .story-experience .hero-floor-wash { background:linear-gradient(0deg,#151613fa 0%,#151613bf 28%,transparent 85%); }
+ .story-experience .hero-content .hero-rule { margin-block:16px; }
+ .story-experience .hero-booking { gap:10px;margin-top:20px; }
+ .story-experience .hero-call { min-height:48px;padding:10px 14px;gap:14px; }
+ .story-experience .hero-call>span:last-child { font-size:16px; }
+ .story-experience .hero-exit { top:23%; }
+ .story-experience .hero-exit p { font-size:32px; }
+ .story-video-control { top:108px;right:20px;min-height:42px;min-width:42px; }
+ .story-experience .ch3-door-l:before,.story-experience .ch3-door-r:before { inset:18px; }
+ .story-experience .ch3-head>.text-plate { padding:24px; }
+ .story-experience .ch3-side { padding:20px; }
+ .story-experience .story-belgrade { --bgd-legend-height:286px; }
+ .story-experience .scene.is-animated .bgd-list { top:auto;bottom:80px;height:var(--bgd-legend-height);padding:0 20px;overflow:visible; }
+ .story-experience .scene.is-animated .bgd-list-extra { display:none; }
+ .story-experience .scene.is-animated .bgd-legend-heading { margin-bottom:6px; }
+ .story-experience .scene.is-animated .bgd-list li { align-items:center;padding-block:3px; }
+ .story-experience .scene.is-animated .bgd-list li span { line-height:1.5; }
+ .story-experience .scene.is-animated .bgd-photos { top:104px;bottom:calc(80px + var(--bgd-legend-height) + 68px);height:auto;padding:0 20px; }
+ .story-experience .scene.is-animated .bgd-photos>ul { height:100%;grid-template-columns:1fr;align-items:center;gap:0; }
+ .story-experience .scene.is-animated .bgd-window { grid-area:1 / 1;padding:12px; }
+ .story-experience .scene.is-animated .bgd-window-photo { height:clamp(80px,12svh,104px);aspect-ratio:auto; }
+ .story-experience .scene.is-animated .bgd-window h3 { margin-top:10px;padding-inline:0;font-size:22px;line-height:1.15; }
+ .story-experience .scene.is-animated .bgd-window p { padding-inline:0;font-size:14px;line-height:1.6; }
+ .story-experience .scene.is-animated .bgd-window-full-copy { display:none; }
+ .story-experience .scene.is-animated .bgd-window-summary { display:block; }
+ .story-experience .bgd-foot { padding-right:76px; }
+ .story-experience .bgd-foot-in { padding:18px 16px; }
+ .story-experience #rezervacija .scene-camera>.sc-layer>div { padding-top:96px;padding-bottom:65px; }
+ .story-experience #rezervacija .relative.border { padding-top:19px;padding-bottom:19px; }
+ .story-experience #rezervacija .rz-in { margin-top:14px; }
+ .story-experience #rezervacija .rz-in:first-of-type { margin-top:0; }
+ .story-experience #rezervacija .rz-in h2 { font-size:32px; }
+ .story-experience #rezervacija .rz-in p.font-display { font-size:17px; }
+ .story-experience #rezervacija .rz-in>p.text-sm { font-size:12px; }
+ .story-experience #rezervacija .relative.mx-auto.h-32 { width:65px;height:65px; }
+ .story-experience #rezervacija .relative.mx-auto.h-32+div { font-size:12px; }
+ .story-experience .scene.is-animated .rt-open { top:105px;left:24px;right:24px; }
+ .story-experience .scene.is-animated .rt-title { top:37%;left:24px;right:24px; }
+ .story-experience .scene.is-animated .rt-end { left:20px;right:20px;bottom:84px;width:auto;padding:20px; }
+ .story-experience .rt-end>.font-display:first-child { font-size:20px; }
+ .story-experience .rt-end .my-6 { margin-block:14px; }
+ .story-experience .rt-end .kicker { margin-bottom:10px; }
+ .story-experience .rt-end h2 { font-size:27px; }
+ .story-experience .rt-end .space-y-3 { font-size:14px;line-height:1.75; }
+ .story-experience .rt-end>a { margin-top:16px;min-height:44px;padding:11px 18px; }
+ .story-experience .story-restaurant .rt-open .flute { height:18px;margin-bottom:14px; }
+ .story-experience .rooms-note { padding-right:85px!important;font-size:12px;line-height:1.75; }
+ .story-experience .story-spa .spa-copy { background:linear-gradient(90deg,#151613f5,#151613eb 58%,#151613d9); }
+ .story-experience .story-spa .spa-copy>div { padding-inline:24px; }
+ .story-experience .story-spa .spa-copy .text-plate { max-width:100%; }
+ .story-experience .story-spa .spa-copy .space-y-4 { font-size:14px; }
+ .story-experience .story-spa .spa-copy .mt-8 { margin-top:22px; }
+ .story-experience .story-spa .spa-copy .my-7 { margin-block:20px; }
+ .story-experience .story-reviews .j-safe { padding:99px 20px 88px; }
+ .story-experience .story-reviews .j-layout { grid-template-columns:1fr;gap:22px;max-width:470px; }
+ .story-experience .story-reviews .j-kicker { margin-bottom:8px;font-size:12px; }
+ .story-experience .story-reviews .j-title { max-width:370px;font-size:31px;line-height:1.12; }
+ .story-experience .story-reviews .j-stats { gap:10px;margin-top:17px; }
+ .story-experience .story-reviews .j-stat { padding:13px 15px; }
+ .story-experience .story-reviews .j-stat-label { font-size:13px; }
+ .story-experience .story-reviews .j-score { margin-block:7px 6px!important; }
+ .story-experience .story-reviews .j-score-value { font-size:42px; }
+ .story-experience .story-reviews .j-score-scale { font-size:14px; }
+ .story-experience .story-reviews .j-count { font-size:13px; }
+ .story-experience .story-reviews .j-snapshot { margin-top:10px;line-height:1.5; }
+ .story-experience .story-reviews .j-direct { margin-top:10px;font-size:13px; }
+ .story-experience .story-reviews .j-excerpts-heading { margin-bottom:11px;font-size:14px; }
+ .story-experience .story-reviews .j-quotes { gap:12px; }
+ .story-experience .story-reviews .j-quote { padding:16px; }
+ .story-experience .story-reviews .j-quote blockquote { font-size:16px;line-height:1.6; }
+ .story-experience .story-reviews .j-quote figcaption { gap:8px;margin-top:10px;font-size:12px; }
+ .story-compass { right:15px;bottom:77px; }
+ .story-compass[data-scene=beograd] { bottom:calc(80px + 286px + 12px); }
+ .story-compass-toggle { width:44px;height:44px; }
+ .story-compass-toggle svg { width:29px;height:29px; }
+ .story-compass-list { bottom:55px; }
+ .story-compass>span { display:none; }
+}
+@media(max-height:600px) and (prefers-reduced-motion:no-preference) { .story-experience { --story-stage:700px; } }
+@media(prefers-reduced-motion:reduce) { .story-experience .kb { animation:none!important; }.story-active body:after { display:none; } }
+@media(min-width:768px) and (max-width:1100px) { .story-experience .story-spa .spa-copy { background:linear-gradient(90deg,#151613f2,#151613e0 70%,#151613b3); } }
+
+/* Text stays explicit: no low-opacity cream metadata and no inversion of light booking controls. */
+.story-experience .font-display { font-weight:400; }
+.story-experience :is(.ch3-plate,.ch3-side,.room-card,.spa-copy,.rt-end,.bgd-window,.bgd-foot-in,.story-reviews) p:not(.font-display):not(.kicker) { color:var(--story-body); }
+.story-experience .hero-sub,.story-experience .hero-facts,.story-experience .story-amenities li { color:var(--story-body); }
+.story-experience .rooms-note,.story-experience .rz-seal-in,.story-experience .j-stats>p { color:var(--story-secondary); }
+.story-experience .rz-frame>.rz-in:not(.font-display),.story-experience .rz-in>p:not(.font-display):not(.kicker) { color:var(--story-body); }
+.story-experience .hero-call:hover,.story-experience .hero-call:hover>span:first-child { color:var(--story-ink); }
+.story-experience .hero-content .hero-facts { line-height:1.75; }

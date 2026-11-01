@@ -1,0 +1,725 @@
+{
+ "/assets/img/rooms/standard-single-room.jpg": {
+  "w": 1720,
+  "h": 1075,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/rooms/standard-single-room"
+ },
+ "/assets/img/rooms/superior-double.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/rooms/superior-double"
+ },
+ "/assets/img/spa/spa-main.jpg": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/spa/spa-main"
+ },
+ "/assets/img/spa/sauna-portrait.jpg": {
+  "w": 1080,
+  "h": 1620,
+  "widths": [
+   640,
+   1024
+  ],
+  "base": "img/spa/sauna-portrait"
+ },
+ "/assets/img/rooms/large-room.jpg": {
+  "w": 1280,
+  "h": 853,
+  "widths": [
+   640,
+   1024
+  ],
+  "base": "img/rooms/large-room"
+ },
+ "/assets/img/rooms/2-bed-app.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/rooms/2-bed-app"
+ },
+ "/assets/img/rooms/double-twin-room.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/rooms/double-twin-room"
+ },
+ "/assets/img/rooms/family-suite.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/rooms/family-suite"
+ },
+ "/assets/img/restaurant/rest-10.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/rest-10"
+ },
+ "/assets/img/restaurant/rest-03.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/rest-03"
+ },
+ "/assets/img/restaurant/rest-07.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/rest-07"
+ },
+ "/assets/img/restaurant/rest-02.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/rest-02"
+ },
+ "/assets/img/restaurant/MG_1136.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/MG_1136"
+ },
+ "/assets/img/restaurant/MG_1128.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/MG_1128"
+ },
+ "/assets/img/restaurant/MG_1126.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/MG_1126"
+ },
+ "/assets/img/restaurant/MG_1081.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/MG_1081"
+ },
+ "/assets/img/restaurant/MG_1076.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/MG_1076"
+ },
+ "/assets/img/restaurant/IMG_1370.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/IMG_1370"
+ },
+ "/assets/img/restaurant/IMG_1134.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/IMG_1134"
+ },
+ "/assets/img/restaurant/MG_1063.jpg": {
+  "w": 1621,
+  "h": 1081,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/MG_1063"
+ },
+ "/assets/img/restaurant/IMG_1109.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/IMG_1109"
+ },
+ "/assets/img/restaurant/IMG_1089.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/restaurant/IMG_1089"
+ },
+ "/assets/img/restaurant/basket.jpg": {
+  "w": 1080,
+  "h": 1620,
+  "widths": [
+   640,
+   1024
+  ],
+  "base": "img/restaurant/basket"
+ },
+ "/assets/img/og-cover.jpg": {
+  "w": 1200,
+  "h": 630,
+  "widths": [
+   640,
+   1024
+  ],
+  "base": "img/og-cover"
+ },
+ "/assets/img/hotel/stepenice-row.jpg": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440,
+   1920
+  ],
+  "base": "img/hotel/stepenice-row"
+ },
+ "/assets/img/hotel/stairs.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/stairs"
+ },
+ "/assets/img/hotel/slide-2-mirror.jpg": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440,
+   1920
+  ],
+  "base": "img/hotel/slide-2-mirror"
+ },
+ "/assets/img/hotel/slide-01-hotel-front.jpg": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440,
+   1920
+  ],
+  "base": "img/hotel/slide-01-hotel-front"
+ },
+ "/assets/img/hotel/PublicHouse_ColorMix_24.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/PublicHouse_ColorMix_24"
+ },
+ "/assets/img/hotel/PublicHouse_ColorMix_12.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/PublicHouse_ColorMix_12"
+ },
+ "/assets/img/hotel/stairs-window.jpg": {
+  "w": 1707,
+  "h": 2560,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/stairs-window"
+ },
+ "/assets/img/hotel/PublicHouse_ColorMix_13.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/PublicHouse_ColorMix_13"
+ },
+ "/assets/img/hotel/PublicHouse_ColorMix_03.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/PublicHouse_ColorMix_03"
+ },
+ "/assets/img/hotel/IMG_0961.jpg": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440,
+   1920
+  ],
+  "base": "img/hotel/IMG_0961"
+ },
+ "/assets/img/hotel/ogledalo.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/ogledalo"
+ },
+ "/assets/img/hotel/hol-02.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/hol-02"
+ },
+ "/assets/img/hotel/hol-01.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/hol-01"
+ },
+ "/assets/img/hotel/hero-slide-5.jpg": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/hero-slide-5"
+ },
+ "/assets/img/hotel/hero-slide-4.jpg": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/hero-slide-4"
+ },
+ "/assets/img/hotel/hero-slide-2.jpg": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/hero-slide-2"
+ },
+ "/assets/img/hotel/hero-slide-3.jpg": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/hero-slide-3"
+ },
+ "/assets/img/hotel/hero-slide-1.jpg": {
+  "w": 1600,
+  "h": 901,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/hero-slide-1"
+ },
+ "/assets/img/hotel/decor-01.jpg": {
+  "w": 1080,
+  "h": 1620,
+  "widths": [
+   640,
+   1024
+  ],
+  "base": "img/hotel/decor-01"
+ },
+ "/assets/img/hotel/bell.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/hotel/bell"
+ },
+ "/assets/img/gallery/MG_2333.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_2333"
+ },
+ "/assets/img/gallery/MG_2327.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_2327"
+ },
+ "/assets/img/gallery/MG_2300.jpg": {
+  "w": 1080,
+  "h": 1620,
+  "widths": [
+   640,
+   1024
+  ],
+  "base": "img/gallery/MG_2300"
+ },
+ "/assets/img/gallery/MG_2289.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_2289"
+ },
+ "/assets/img/gallery/MG_2283-scaled.jpg": {
+  "w": 2048,
+  "h": 1366,
+  "widths": [
+   640,
+   1024,
+   1440,
+   1920
+  ],
+  "base": "img/gallery/MG_2283-scaled"
+ },
+ "/assets/img/gallery/MG_1020-scaled.jpg": {
+  "w": 2048,
+  "h": 1366,
+  "widths": [
+   640,
+   1024,
+   1440,
+   1920
+  ],
+  "base": "img/gallery/MG_1020-scaled"
+ },
+ "/assets/img/gallery/MG_0939-scaled.jpg": {
+  "w": 2048,
+  "h": 1366,
+  "widths": [
+   640,
+   1024,
+   1440,
+   1920
+  ],
+  "base": "img/gallery/MG_0939-scaled"
+ },
+ "/assets/img/gallery/MG_0935.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0935"
+ },
+ "/assets/img/gallery/MG_0930.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0930"
+ },
+ "/assets/img/gallery/MG_0922.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0922"
+ },
+ "/assets/img/gallery/MG_0918.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0918"
+ },
+ "/assets/img/gallery/MG_0916.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0916"
+ },
+ "/assets/img/gallery/MG_0908.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0908"
+ },
+ "/assets/img/gallery/MG_0894-2.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0894-2"
+ },
+ "/assets/img/gallery/MG_0890.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0890"
+ },
+ "/assets/img/gallery/MG_0876-1.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0876-1"
+ },
+ "/assets/img/gallery/MG_0869.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0869"
+ },
+ "/assets/img/gallery/MG_0864.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0864"
+ },
+ "/assets/img/gallery/MG_0848-scaled.jpg": {
+  "w": 1707,
+  "h": 2560,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0848-scaled"
+ },
+ "/assets/img/gallery/MG_0838.jpg": {
+  "w": 1080,
+  "h": 1620,
+  "widths": [
+   640,
+   1024
+  ],
+  "base": "img/gallery/MG_0838"
+ },
+ "/assets/img/gallery/MG_0833.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0833"
+ },
+ "/assets/img/gallery/MG_0808.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0808"
+ },
+ "/assets/img/gallery/MG_0787.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0787"
+ },
+ "/assets/img/gallery/MG_0782.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0782"
+ },
+ "/assets/img/gallery/MG_0703.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0703"
+ },
+ "/assets/img/gallery/MG_0746.jpg": {
+  "w": 1620,
+  "h": 1080,
+  "widths": [
+   640,
+   1024,
+   1440
+  ],
+  "base": "img/gallery/MG_0746"
+ },
+ "/assets/img/brand/logo-white.png": {
+  "w": 200,
+  "h": 200,
+  "widths": [],
+  "base": "img/brand/logo-white"
+ },
+ "/assets/img/brand/logo-dark.png": {
+  "w": 800,
+  "h": 800,
+  "widths": [
+   640
+  ],
+  "base": "img/brand/logo-dark"
+ },
+ "/assets/video/hero-poster.jpg": {
+  "w": 1280,
+  "h": 722,
+  "widths": [
+   640,
+   1024
+  ],
+  "base": "video/hero-poster"
+ }
+}

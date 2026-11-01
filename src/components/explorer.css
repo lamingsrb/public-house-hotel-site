@@ -1,0 +1,106 @@
+.belgrade-explorer { color: #f7f3eb; }
+.belgrade-explorer__toolbar { display: flex; align-items: center; justify-content: space-between; gap: 28px; margin-bottom: 30px; padding-bottom: 27px; border-bottom: 1px solid #f7f3eb2b; }
+.belgrade-explorer__toolbar .section-eyebrow { margin: 0; }
+.belgrade-explorer__note { margin-top: 10px; color: #c5cabc; font-size: 13px; line-height: 1.7; }
+.explorer-view-switch { display: inline-flex; flex: 0 0 auto; border: 1px solid #f7f3eb42; }
+.explorer-view-switch button { display: inline-flex; justify-content: center; align-items: center; gap: 9px; min-height: 46px; padding: 11px 22px; color: #c5cabc; font-size: 12px; line-height: 1.5; transition: background .2s, color .2s; }
+.explorer-view-switch button + button { border-left: 1px solid #f7f3eb42; }
+.explorer-view-switch button svg { width: 17px; height: 17px; stroke: currentColor; stroke-width: 1.1; }
+.explorer-view-switch button[aria-pressed="true"] { color: #151613; background: #f7f3eb; }
+.explorer-view-switch button[aria-pressed="false"]:hover { color: #f7f3eb; background: #2b3025; }
+.explorer-loading { display: flex; align-items: center; justify-content: center; min-height: 520px; border: 1px solid #f7f3eb30; background: #20231c; color: #c8cdbf; font-size: 14px; letter-spacing: .08em; }
+
+.isochrones__categories { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 36px; }
+.isochrones__categories button { display: inline-flex; gap: 9px; align-items: center; min-height: 44px; padding: 10px 16px; border: 1px solid #f7f3eb2b; color: #c5cabc; font-size: 12px; line-height: 1.5; transition: color .2s, background .2s, border-color .2s; }
+.isochrones__categories button:hover { border-color: #d6b77d; color: #f7f3eb; }
+.isochrones__categories button[aria-pressed="true"] { background: #f7f3eb; border-color: #f7f3eb; color: #151613; }
+.isochrones__categories button[aria-pressed="true"] svg path,
+.isochrones__categories button[aria-pressed="true"] svg circle { fill: #25271f; stroke: #25271f; }
+.isochrones__layout { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(300px,1fr); gap: clamp(32px, 5vw, 76px); align-items: start; }
+.isochrones__diagram { background: radial-gradient(circle, #29302152, transparent 67%); }
+.isochrones__rings > circle { stroke: #d6b77d50; }
+.isochrones__ring-label { z-index: 1; padding: 2px 4px; background: #151613; color: #c5cabc; font-size: 12px; font-variant-numeric: tabular-nums; line-height: 1.4; }
+.isochrones__compass-label { color: #c5cabc; font-size: 12px; text-transform: uppercase; letter-spacing: .16em; }
+.isochrones__hotel-label { color: #d6b77d; font-size: 12px; text-transform: uppercase; letter-spacing: .13em; }
+.isochrones__diagram .iso-dot { min-width: 40px; min-height: 40px; }
+.isochrones__tooltip { padding: 10px 12px; border: 1px solid #d6b77d80; background: #1c2019; box-shadow: 0 8px 22px #0005; }
+.isochrones__tooltip-name { display: block; color: #f7f3eb; font-family: var(--font-display); font-weight: 400; font-size: 20px; line-height: 1.1; }
+.isochrones__tooltip-time { display: block; margin-top: 7px; color: #d6b77d; font-size: 12px; line-height: 1.5; }
+.isochrones__legend { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 20px; color: #c5cabc; font-size: 12px; }
+.isochrones__explanation { max-width: 62ch; margin-top: 20px; color: #c5cabc; font-size: 12px; line-height: 1.85; }
+.isochrones__list-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding-bottom: 19px; border-bottom: 1px solid #f7f3eb30; }
+.isochrones__list-heading h3 { font-family: var(--font-display); font-weight: 400; font-size: 34px; line-height: 1.2; letter-spacing: -.025em; }
+.isochrones__list-heading > span { flex-shrink: 0; color: #c5cabc; font-size: 12px; letter-spacing: .04em; }
+.isochrones__list { position: relative; max-height: 700px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #d6b77d66 #151613; }
+.isochrones__list > li { border-bottom: 1px solid #f7f3eb1f; }
+.isochrones__place { display: flex; gap: 13px; width: 100%; min-height: 82px; border-left: 2px solid transparent; padding: 20px 15px; text-align: left; transition: background .2s, border-color .2s; }
+.isochrones__place:hover,
+.isochrones__place[data-active="true"] { border-left-color: #d6b77d; background: #282e22; }
+.isochrones__place-name { color: #f7f3eb; font-family: var(--font-display); font-weight: 400; font-size: 25px; line-height: 1.12; letter-spacing: -.01em; }
+.isochrones__place-time { flex-shrink: 0; color: #d6b77d; font-size: 12px; line-height: 1.8; white-space: nowrap; }
+.isochrones__place-description { display: block; margin-top: 9px; color: #c5cabc; font-size: 13px; line-height: 1.8; }
+.isochrones__off-diagram { padding: 20px 15px; border-left: 2px dashed #b9c0ae55; }
+.isochrones__off-diagram .isochrones__place-time { white-space: normal; max-width: 100px; text-align: right; color: #c5cabc; }
+.isochrones__partner-note { margin-top: 16px; padding: 20px 17px; background: #24291f; border-left: 2px solid #d6b77d80; }
+
+/* Keep Leaflet lazy and preserve its controls, while matching the guide UI. */
+.explorer-map .leaflet-tile-pane { filter: grayscale(.6) invert(.94) hue-rotate(180deg) brightness(.82) contrast(.92); }
+.explorer-map > div { gap: 42px; grid-template-columns: minmax(280px,.85fr) minmax(0,1.65fr); }
+.explorer-map button { min-height: 44px; }
+.explorer-map > div > div:first-child > div:first-child button { padding: 10px 14px; font-size: 12px; letter-spacing: .05em; color: #c5cabc; border-color: #f7f3eb38; }
+.explorer-map > div > div:first-child > div:first-child button.bg-gold { background: #f7f3eb; border-color: #f7f3eb; color: #151613; }
+.explorer-map ul { scrollbar-width: thin; scrollbar-color: #d6b77d66 #151613; }
+.explorer-map li button { padding: 18px 14px; border-bottom: 1px solid #f7f3eb1f; border-left-color: transparent; }
+.explorer-map li button.bg-ink-mute { border-left-color: #d6b77d; background: #282e22; }
+.explorer-map li button .font-display,
+.explorer-map li > p.font-display { font-size: 25px; font-weight: 400; line-height: 1.15; }
+.explorer-map li button > span:last-child { margin-top: 8px; font-size: 13px; line-height: 1.8; color: #c5cabc; }
+.explorer-map li > p:last-child { color: #c5cabc; line-height: 1.8; }
+.explorer-map ul + p { color: #c5cabc; font-size: 12px; line-height: 1.8; }
+.explorer-map [role="application"] { border: 1px solid #f7f3eb30; height: 610px; }
+.explorer-map .leaflet-popup-content-wrapper,
+.explorer-map .leaflet-popup-tip { background: #20251b; color: #f7f3eb; border-radius: 0; }
+.explorer-map .leaflet-popup-content { margin: 17px 19px; font-family: var(--font-sans); font-size: 14px; line-height: 1.8; }
+.explorer-map .leaflet-control-attribution { background: #151613e8; color: #c5cabc; }
+.explorer-map .leaflet-control-attribution a { color: #d6b77d; }
+.explorer-map .leaflet-bar { border: 1px solid #b9c0ae80; border-radius: 0; box-shadow: none; }
+.explorer-map .leaflet-bar a { color: #f7f3eb; background: #20251b; border-radius: 0; border-bottom-color: #b9c0ae50; }
+
+@media (max-width: 1000px) {
+  .isochrones__layout { grid-template-columns: 1fr 1fr; gap: 26px; }
+  .isochrones__list-heading { display: block; }
+  .isochrones__list-heading > span { display: block; margin-top: 8px; }
+  .isochrones__place { padding: 17px 10px; gap: 10px; }
+  .isochrones__place-name { font-size: 23px; }
+  .explorer-map > div { grid-template-columns: 1fr; }
+  .explorer-map [role="application"] { height: 460px; }
+}
+
+@media (max-width: 700px) {
+  .belgrade-explorer__toolbar { display: block; padding-bottom: 24px; margin-bottom: 24px; }
+  .belgrade-explorer__note { font-size: 12px; max-width: 34ch; }
+  .explorer-view-switch { display: flex; margin-top: 20px; width: 100%; }
+  .explorer-view-switch button { flex: 1; min-height: 46px; padding-inline: 18px; }
+  .isochrones__categories { gap: 7px; margin-bottom: 23px; }
+  .isochrones__categories button { min-height: 44px; padding: 9px 11px; font-size: 12px; gap: 7px; }
+  .isochrones__layout { display: block; }
+  .isochrones__diagram { margin-block: 8px; }
+  .isochrones__ring-label { font-size: 12px; }
+  .isochrones__compass-label { font-size: 12px; }
+  .isochrones__hotel-label { font-size: 12px; letter-spacing: .09em; }
+  .isochrones__legend { margin-top: 19px; font-size: 12px; gap: 10px 15px; }
+  .isochrones__explanation { font-size: 12px; margin-top: 17px; }
+  .isochrones__destinations { margin-top: 36px; }
+  .isochrones__list-heading { display: flex; align-items: baseline; padding-bottom: 17px; }
+  .isochrones__list-heading h3 { font-size: 31px; }
+  .isochrones__list-heading > span { margin-top: 0; font-size: 12px; }
+  .isochrones__list { max-height: none; overflow: visible; }
+  .isochrones__place { padding-block: 19px; }
+  .isochrones__place-name { font-size: 25px; }
+  .isochrones__place-description { font-size: 13px; }
+  .isochrones__off-diagram { padding-inline: 10px; }
+  .explorer-map [role="application"] { height: 400px; }
+  .explorer-map ul { max-height: none; overflow: visible; }
+  .explorer-map > div { gap: 30px; }
+  .explorer-loading { min-height: 400px; }
+}

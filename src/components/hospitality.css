@@ -1,0 +1,195 @@
+/* Real photography, open layouts, readable information. No scroll pins. */
+.rooms-editorial,
+.amenities-editorial,
+.spa-editorial,
+.restaurant-editorial {
+  position: relative;
+  padding-block: clamp(76px, 8.5vw, 136px);
+  scroll-margin-top: 110px;
+}
+
+.rooms-editorial,
+.restaurant-editorial { background: #151613; color: #f7f3eb; }
+.amenities-editorial,
+.spa-editorial { background: #21241e; color: #f7f3eb; }
+.rooms-editorial .section-title,
+.restaurant-editorial .section-title { color: #f7f3eb; }
+.rooms-editorial .section-copy { color: #e0e2d8; }
+
+.rooms-editorial__heading { display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px; align-items: end; margin-bottom: 60px; }
+.rooms-editorial__heading .section-title { max-width: 680px; }
+.rooms-editorial__intro { max-width: 440px; padding-bottom: 8px; }
+.rooms-editorial__intro .text-link { margin-top: 24px; }
+.rooms-editorial__grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: clamp(28px, 4vw, 64px); row-gap: 72px; }
+.rooms-editorial__room { min-width: 0; }
+.rooms-editorial__photo { position: relative; aspect-ratio: 1.36; overflow: hidden; background: #292a25; }
+.rooms-editorial__photo img,
+.amenities-editorial__photo img,
+.spa-editorial__main img,
+.spa-editorial__detail img,
+.restaurant-editorial__main img,
+.restaurant-editorial__detail img { transition: transform 850ms cubic-bezier(.2,.65,.3,1); }
+.rooms-editorial__room:hover .rooms-editorial__photo img,
+.rooms-editorial__room:focus-within .rooms-editorial__photo img,
+.amenities-editorial__visual:hover img,
+.spa-editorial__images:hover img,
+.restaurant-editorial__visual:hover img,
+.restaurant-editorial__detail:hover img { transform: scale(1.035); }
+.rooms-editorial__number { position: absolute; bottom: 18px; left: 20px; display: grid; place-items: center; min-width: 38px; height: 38px; background: #f7f3eb; color: #25271f; font-size: 12px; letter-spacing: .08em; }
+.rooms-editorial__information { padding-top: 23px; }
+.rooms-editorial__meta { display: flex; gap: 22px; color: #d6b77d; font-size: 12px; text-transform: uppercase; letter-spacing: .14em; }
+.rooms-editorial__information h3 { margin-block: 9px 16px; font-family: var(--font-display); font-weight: 400; font-size: clamp(32px, 3vw, 44px); letter-spacing: -.025em; line-height: 1.12; }
+.rooms-editorial__description { max-width: 54ch; color: #e0e2d8; font-size: 14px; line-height: 1.8; }
+.rooms-editorial__highlights { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px; color: #e0e2d8; font-size: 12px; line-height: 1.65; }
+.rooms-editorial__highlights li { display: flex; align-items: center; gap: 8px; }
+.rooms-editorial__highlights li::before { content: ""; flex: 0 0 auto; width: 3px; height: 3px; background: #d6b77d; }
+.rooms-editorial__actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px 28px; margin-top: 27px; }
+.rooms-editorial__actions .button-outline { min-height: 46px; padding: 11px 22px; }
+.rooms-editorial__price { font-size: 12px; color: #e0e2d8; }
+.rooms-editorial__price strong { font-family: var(--font-display); color: #f7f3eb; font-size: 27px; font-weight: 400; }
+.rooms-editorial__footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; margin-top: 50px; padding-top: 25px; border-top: 1px solid #f7f3eb27; }
+.rooms-editorial__footer > p { max-width: 620px; color: #c5cabc; font-size: 12px; line-height: 1.8; }
+.rooms-editorial__collection-intro { display: flex; align-items: start; justify-content: space-between; gap: 35px; margin-bottom: 48px; border-bottom: 1px solid #f7f3eb27; padding-bottom: 30px; }
+.rooms-editorial__collection-intro > p { max-width: 640px; }
+.rooms-editorial__collection-label { flex-shrink: 0; padding-top: 6px; color: #d6b77d; font-size: 12px; letter-spacing: .15em; }
+.rooms-editorial--collection .rooms-editorial__room:first-child { grid-column: 1 / -1; display: grid; grid-template-columns: 1.3fr .8fr; align-items: center; gap: clamp(30px, 5vw, 80px); padding-bottom: 58px; border-bottom: 1px solid #f7f3eb27; }
+.rooms-editorial--collection .rooms-editorial__room:first-child .rooms-editorial__photo { aspect-ratio: 1.4; }
+.rooms-editorial--collection .rooms-editorial__room:first-child .rooms-editorial__information { padding-top: 0; }
+
+.amenities-editorial .section-eyebrow,
+.spa-editorial .section-eyebrow { color: #d6b77d; }
+.amenities-editorial .section-title,
+.spa-editorial .section-title { color: #f7f3eb; }
+.amenities-editorial .section-title { white-space: pre-line; }
+.amenities-editorial__heading { display: flex; justify-content: space-between; align-items: end; gap: 50px; padding-bottom: 45px; border-bottom: 1px solid #f7f3eb30; }
+.amenities-editorial__heading-note { max-width: 240px; margin-bottom: 8px; color: #c5cabc; font-size: 14px; line-height: 1.8; }
+.amenities-editorial__body { display: grid; grid-template-columns: .82fr 1.55fr; gap: clamp(38px, 5vw, 80px); margin-top: 48px; }
+.amenities-editorial__visual { align-self: start; }
+.amenities-editorial__photo { position: relative; aspect-ratio: .8; overflow: hidden; background: #ded8cb; }
+.amenities-editorial__visual figcaption,
+.restaurant-editorial__visual figcaption { display: flex; justify-content: space-between; gap: 16px; margin-top: 15px; font-size: 12px; color: #c5cabc; line-height: 1.7; }
+.amenities-editorial__visual figcaption span:first-child,
+.restaurant-editorial__visual figcaption span:first-child { letter-spacing: .18em; }
+.amenities-editorial__visual figcaption span:last-child,
+.restaurant-editorial__visual figcaption span:last-child { text-align: right; }
+.amenities-editorial__details { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.amenities-editorial__group-heading { display: flex; align-items: baseline; gap: 15px; margin-bottom: 14px; }
+.amenities-editorial__group-heading > span { color: #d6b77d; font-size: 12px; }
+.amenities-editorial__group-heading h3 { font-family: var(--font-display); font-weight: 400; font-size: clamp(28px, 2.4vw, 36px); line-height: 1.2; letter-spacing: -.025em; }
+.amenities-editorial__list li { display: flex; align-items: baseline; gap: 11px; padding-block: 10px; border-bottom: 1px solid #f7f3eb1f; font-size: 13px; color: #e0e2d8; line-height: 1.55; }
+.amenities-editorial__list li > span { flex-shrink: 0; color: #d6b77d; font-size: 13px; font-weight: 400; }
+
+.spa-editorial__layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(42px, 7vw, 110px); align-items: center; }
+.spa-editorial__images { position: relative; padding: 0 12% 56px 0; }
+.spa-editorial__main { position: relative; aspect-ratio: .99; overflow: hidden; background: #d8d0c1; }
+.spa-editorial__main img { object-position: 70% center; }
+.spa-editorial__detail { position: absolute; right: 0; bottom: 0; width: 36%; aspect-ratio: .7; border: 7px solid #21241e; overflow: hidden; background: #d8d0c1; }
+.spa-editorial__image-caption { position: absolute; bottom: 11px; left: 0; max-width: 58%; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #c5cabc; }
+.spa-editorial__copy .section-title { max-width: 540px; }
+.hospitality-body { font-size: 15px; line-height: 1.9; }
+.hospitality-body p + p { margin-top: 17px; }
+.spa-editorial .hospitality-body { color: #e0e2d8; margin-top: 28px; }
+.spa-editorial__included { display: flex; align-items: center; gap: 9px; margin-top: 26px; color: #d6b77d; font-size: 12px; letter-spacing: .035em; }
+.spa-editorial__included svg { width: 18px; height: 18px; flex-shrink: 0; }
+.spa-editorial__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 24px; margin-top: 29px; }
+.spa-editorial .button-primary { background: #d6b77d; color: #151613; border-color: #d6b77d; }
+.spa-editorial .button-primary:hover { background: #ead2a4; border-color: #ead2a4; }
+.spa-editorial .text-link { color: #f7f3eb; border-color: #897247; }
+.hospitality-note { margin-top: 19px; color: #c5cabc; font-size: 12px; line-height: 1.75; }
+
+.restaurant-editorial__heading { margin-bottom: 48px; max-width: 850px; }
+.restaurant-editorial__layout { display: grid; grid-template-columns: 1.55fr 1fr; gap: clamp(35px, 5vw, 80px); }
+.restaurant-editorial__main { position: relative; aspect-ratio: .93; overflow: hidden; background: #292a25; }
+.restaurant-editorial__main img { object-position: 45% center; }
+.restaurant-editorial__visual figcaption { color: #c5cabc; }
+.restaurant-editorial__right { display: flex; flex-direction: column; gap: 46px; justify-content: space-between; padding-top: 26px; }
+.restaurant-editorial__lead { font-family: var(--font-display); font-size: clamp(29px, 2.6vw, 40px); font-weight: 400; line-height: 1.2; letter-spacing: -.025em; color: #f7f3eb; margin-bottom: 22px; }
+.restaurant-editorial .hospitality-body { color: #e0e2d8; font-size: 15px; }
+.restaurant-editorial__copy .text-link { margin-top: 25px; }
+.restaurant-editorial__detail { position: relative; width: 100%; aspect-ratio: 1.45; overflow: hidden; background: #292a25; }
+.restaurant-editorial__detail img { object-position: center 18%; }
+.hospitality-standalone { padding-block: 76px; }
+.hospitality-standalone .section-title { font-size: clamp(38px, 4.6vw, 64px); }
+
+@media (min-width: 901px) {
+  .rooms-editorial:not(.rooms-editorial--collection) .rooms-editorial__room:nth-child(even) { margin-top: 76px; }
+}
+
+@media (max-width: 1100px) {
+  .amenities-editorial__body { grid-template-columns: .7fr 1.5fr; gap: 32px; }
+  .amenities-editorial__details { gap: 24px; }
+  .amenities-editorial__photo { aspect-ratio: .63; }
+}
+
+@media (max-width: 900px) {
+  .rooms-editorial__heading { gap: 35px; grid-template-columns: 1fr 1fr; }
+  .rooms-editorial__grid { row-gap: 52px; gap: 52px 26px; }
+  .rooms-editorial--collection .rooms-editorial__room:first-child { gap: 30px; }
+  .amenities-editorial__body { grid-template-columns: 1fr; gap: 38px; }
+  .amenities-editorial__visual { display: none; }
+  .amenities-editorial__details { gap: 45px; }
+  .amenities-editorial__list li { font-size: 13px; padding-block: 11px; }
+  .spa-editorial__layout { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .spa-editorial__images { padding-bottom: 45px; }
+  .spa-editorial__main { aspect-ratio: .67; }
+  .spa-editorial__detail { width: 40%; }
+  .spa-editorial__copy .section-title { font-size: clamp(39px, 6vw, 58px); }
+  .spa-editorial .hospitality-body { font-size: 14px; }
+  .restaurant-editorial__layout { gap: 32px; grid-template-columns: 1.2fr 1fr; }
+  .restaurant-editorial__main { aspect-ratio: .72; }
+  .restaurant-editorial__right { padding-top: 0; gap: 26px; }
+  .restaurant-editorial__detail { aspect-ratio: 1.2; }
+}
+
+@media (max-width: 700px) {
+  .rooms-editorial,
+  .amenities-editorial,
+  .spa-editorial,
+  .restaurant-editorial { padding-block: 66px; scroll-margin-top: 90px; }
+  .rooms-editorial__heading { display: block; margin-bottom: 36px; }
+  .rooms-editorial__intro { margin-top: 24px; max-width: none; padding-bottom: 0; }
+  .rooms-editorial__grid { grid-template-columns: 1fr; row-gap: 44px; }
+  .rooms-editorial__photo { aspect-ratio: 1.23; }
+  .rooms-editorial__information { padding-top: 19px; }
+  .rooms-editorial__information h3 { font-size: 36px; }
+  .rooms-editorial__description { font-size: 14px; }
+  .rooms-editorial__highlights { font-size: 12px; gap: 7px 17px; }
+  .rooms-editorial__actions { margin-top: 23px; }
+  .rooms-editorial__footer { margin-top: 35px; }
+  .rooms-editorial__collection-intro { gap: 18px; margin-bottom: 32px; padding-bottom: 24px; }
+  .rooms-editorial__collection-label { font-size: 12px; white-space: nowrap; }
+  .rooms-editorial--collection .rooms-editorial__room:first-child { display: block; padding-bottom: 0; border-bottom: 0; }
+  .rooms-editorial--collection .rooms-editorial__room:first-child .rooms-editorial__photo { aspect-ratio: 1.23; }
+  .rooms-editorial--collection .rooms-editorial__room:first-child .rooms-editorial__information { padding-top: 19px; }
+  .amenities-editorial__heading { display: block; padding-bottom: 28px; }
+  .amenities-editorial__heading-note { max-width: none; margin-top: 22px; margin-bottom: 0; font-size: 13px; }
+  .amenities-editorial__body { margin-top: 32px; }
+  .amenities-editorial__details { gap: 35px 20px; }
+  .amenities-editorial__group-heading { gap: 9px; }
+  .amenities-editorial__group-heading h3 { font-size: 28px; }
+  .amenities-editorial__list li { font-size: 13px; gap: 7px; padding-block: 9px; }
+  .spa-editorial__layout { display: flex; flex-direction: column; align-items: stretch; gap: 35px; }
+  .spa-editorial__images { padding-right: 12%; padding-bottom: 45px; }
+  .spa-editorial__main { aspect-ratio: 1.12; }
+  .spa-editorial__detail { width: 33%; border-width: 5px; }
+  .spa-editorial__image-caption { font-size: 12px; bottom: 9px; }
+  .spa-editorial__copy .section-title { font-size: clamp(42px, 11vw, 58px); }
+  .spa-editorial .hospitality-body { margin-top: 23px; font-size: 14px; }
+  .spa-editorial__actions { gap: 20px; }
+  .restaurant-editorial__heading { margin-bottom: 30px; }
+  .restaurant-editorial__layout { display: block; }
+  .restaurant-editorial__main { aspect-ratio: 1.08; }
+  .restaurant-editorial__visual figcaption { font-size: 12px; gap: 12px; }
+  .restaurant-editorial__right { margin-top: 34px; gap: 32px; }
+  .restaurant-editorial__lead { font-size: 35px; margin-bottom: 17px; }
+  .restaurant-editorial__detail { aspect-ratio: 1.65; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rooms-editorial__photo img,
+  .amenities-editorial__photo img,
+  .spa-editorial__main img,
+  .spa-editorial__detail img,
+  .restaurant-editorial__main img,
+  .restaurant-editorial__detail img { transition: none; transform: none !important; }
+}

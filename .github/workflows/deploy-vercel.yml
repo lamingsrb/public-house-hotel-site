@@ -1,0 +1,44 @@
+name: Deploy public hotel source to client Vercel
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hotel-public-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # Explicit public-repository configuration is required before enabling.
+    if: >-
+      github.repository == 'lamingsrb/public-house-hotel-site' &&
+      github.ref == 'refs/heads/main' &&
+      vars.VERCEL_CLIENT_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: "24"
+      - name: Validate client target
+        shell: bash
+        run: |
+          test -n "$VERCEL_TOKEN"
+          test -n "$VERCEL_ORG_ID"
+          test "$VERCEL_ORG_ID" != "team_pWgBcwo7oEQzsrHbaFEvuaaF"
+          test "$VERCEL_ORG_ID" = "team_q4RaIK40c2Iesb8YrpHNowFG"
+          test "$VERCEL_PROJECT_ID" = "prj_OeqC6ZWcZuplth3qiPaRYcdXe115"
+      - name: Deploy this public source checkout
+        run: npx --yes vercel@65.9.0 deploy --prod --yes

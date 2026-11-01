@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 1,
+  "reconstruction": {
+    "description": "Photo-referenced capsule stairwell reconstruction; not a measured survey or photogrammetric scan.",
+    "dimensionsInferred": true,
+    "units": "metres",
+    "upAxis": "+Y"
+  },
+  "model": {
+    "source": "src/lib/staircase/model.ts",
+    "sha256": "d54314f569534b122b7cd69030171b544dec6cbda23f981f11dd2b2ab862ac54",
+    "proportions": {
+      "halfStraight": 1.1,
+      "innerRadius": 0.5,
+      "width": 1.1,
+      "walkRadius": 1.06,
+      "rise": 0.172,
+      "stepsPerTurn": 36,
+      "turns": 2
+    },
+    "boundsMetres": {
+      "min": [
+        -4,
+        -0.4000000059604645,
+        -3
+      ],
+      "max": [
+        4,
+        14.784000396728516,
+        3
+      ]
+    },
+    "extentsMetres": [
+      8,
+      15.18400040268898,
+      6
+    ],
+    "meshes": 10,
+    "vertices": 36632,
+    "triangles": 55656
+  },
+  "textureBaseline": 0.75,
+  "materialSourceColorSpace": "sRGB",
+  "journeyStations": [
+    {
+      "id": "sobe",
+      "turn": 0.78,
+      "start": 0.24,
+      "end": 0.38,
+      "progress": 0.31,
+      "material": 6,
+      "photoAspect": 1.5
+    },
+    {
+      "id": "spa",
+      "turn": 1.17,
+      "start": 0.51,
+      "end": 0.64,
+      "progress": 0.575,
+      "material": 7,
+      "photoAspect": 1.7777777777777777
+    },
+    {
+      "id": "restoran",
+      "turn": 1.47,
+      "start": 0.77,
+      "end": 0.9,
+      "progress": 0.835,
+      "material": 8,
+      "photoAspect": 1.5
+    }
+  ],
+  "references": [
+    {
+      "texture": "stone.webp",
+      "mimeType": "image/png",
+      "kind": "modulation",
+      "width": 512,
+      "height": 512,
+      "webpBytes": 111382,
+      "quality": 92,
+      "source": "public/assets/img/hotel/stairs-window.jpg",
+      "crop": {
+        "left": 1050,
+        "top": 2300,
+        "width": 400,
+        "height": 180
+      },
+      "sourceMeanRGB": [
+        0.6114772875816431,
+        0.48572102396517364,
+        0.3403301742920071
+      ],
+      "sourceMeanLinearRGB": [
+        0.33341401047327185,
+        0.20249508308975422,
+        0.09689654213350393
+      ],
+      "normalizedMean": 0.7504919363780237,
+      "normalizedMeanRGB": [
+        0.7503032609525994,
+        0.7506623810410687,
+        0.7505101671404026
+      ],
+      "linearModulationMeanRGB": [
+        0.7499986835552075,
+        0.7500032911111364,
+        0.7500157973343875
+      ],
+      "detailGain": 0.95,
+      "lowFrequencyGain": 0.35,
+      "chromaGain": 0.6,
+      "bounds": [
+        0.5,
+        0.98
+      ]
+    },
+    {
+      "texture": "wood.webp",
+      "mimeType": "image/png",
+      "kind": "modulation",
+      "width": 1024,
+      "height": 128,
+      "webpBytes": 43200,
+      "quality": 92,
+      "source": "public/assets/img/hotel/stairs.jpg",
+      "crop": {
+        "left": 800,
+        "top": 650,
+        "width": 700,
+        "height": 400
+      },
+      "rotation": 18.5,
+      "rectifiedCrop": {
+        "left": 180,
+        "top": 326,
+        "width": 520,
+        "height": 42
+      },
+      "sourceMeanRGB": [
+        0.5390880198233986,
+        0.30300222653157793,
+        0.05564407814406675
+      ],
+      "sourceMeanLinearRGB": [
+        0.2586059319527234,
+        0.07725355139556997,
+        0.004744144645504405
+      ],
+      "normalizedMean": 0.7506051855147833,
+      "normalizedMeanRGB": [
+        0.750454891429016,
+        0.7506282133213018,
+        0.750732451794032
+      ],
+      "linearModulationMeanRGB": [
+        0.7500128054149444,
+        0.750015917011221,
+        0.7500509823069433
+      ],
+      "detailGain": 0.85,
+      "lowFrequencyGain": 0.3,
+      "chromaGain": 0.5,
+      "bounds": [
+        0.5,
+        0.98
+      ]
+    },
+    {
+      "texture": "plaster.webp",
+      "mimeType": "image/png",
+      "kind": "modulation",
+      "width": 512,
+      "height": 512,
+      "webpBytes": 66048,
+      "quality": 92,
+      "source": "public/assets/img/hotel/stairs-window.jpg",
+      "crop": {
+        "left": 950,
+        "top": 170,
+        "width": 384,
+        "height": 384
+      },
+      "sourceMeanRGB": [
+        0.4805787994451493,
+        0.3854527558637067,
+        0.26239753008421224
+      ],
+      "sourceMeanLinearRGB": [
+        0.19722397584695434,
+        0.12351160152008173,
+        0.05660112596537045
+      ],
+      "normalizedMean": 0.7504347009600895,
+      "normalizedMeanRGB": [
+        0.7504618925210796,
+        0.750584366742764,
+        0.750257843616425
+      ],
+      "linearModulationMeanRGB": [
+        0.7500141218600999,
+        0.7500008377379191,
+        0.7499950334141787
+      ],
+      "detailGain": 0.75,
+      "lowFrequencyGain": 0.22,
+      "chromaGain": 0.4,
+      "bounds": [
+        0.66,
+        0.84
+      ]
+    },
+    {
+      "texture": "journey-rooms.webp",
+      "mimeType": "image/jpeg",
+      "kind": "poster",
+      "width": 600,
+      "height": 800,
+      "webpBytes": 24566,
+      "quality": 82,
+      "source": "public/assets/img/rooms/double-twin-room.jpg",
+      "number": "01",
+      "label": "ROOMS",
+      "crop": {
+        "fit": "contain",
+        "position": "centre",
+        "left": 20,
+        "top": 90,
+        "width": 560,
+        "height": 480,
+        "sourceBounds": {
+          "left": 0,
+          "top": 0,
+          "width": 1620,
+          "height": 1080
+        }
+      },
+      "photoBounds": {
+        "left": 20,
+        "top": 143,
+        "width": 560,
+        "height": 373
+      },
+      "matteColor": "#e5dece",
+      "photoOverlays": false
+    },
+    {
+      "texture": "journey-spa.webp",
+      "mimeType": "image/jpeg",
+      "kind": "poster",
+      "width": 600,
+      "height": 800,
+      "webpBytes": 27472,
+      "quality": 82,
+      "source": "public/assets/img/spa/spa-main.jpg",
+      "number": "02",
+      "label": "PRIVATE SPA",
+      "crop": {
+        "fit": "contain",
+        "position": "centre",
+        "left": 20,
+        "top": 90,
+        "width": 560,
+        "height": 480,
+        "sourceBounds": {
+          "left": 0,
+          "top": 0,
+          "width": 1600,
+          "height": 900
+        }
+      },
+      "photoBounds": {
+        "left": 20,
+        "top": 172,
+        "width": 560,
+        "height": 315
+      },
+      "matteColor": "#e5dece",
+      "photoOverlays": false
+    },
+    {
+      "texture": "journey-restaurant.webp",
+      "mimeType": "image/jpeg",
+      "kind": "poster",
+      "width": 600,
+      "height": 800,
+      "webpBytes": 41300,
+      "quality": 82,
+      "source": "public/assets/img/restaurant/MG_1081.jpg",
+      "number": "03",
+      "label": "RESTAURANT",
+      "crop": {
+        "fit": "contain",
+        "position": "centre",
+        "left": 20,
+        "top": 90,
+        "width": 560,
+        "height": 480,
+        "sourceBounds": {
+          "left": 0,
+          "top": 0,
+          "width": 1620,
+          "height": 1080
+        }
+      },
+      "photoBounds": {
+        "left": 20,
+        "top": 143,
+        "width": 560,
+        "height": 373
+      },
+      "matteColor": "#e5dece",
+      "photoOverlays": false
+    }
+  ],
+  "materials": [
+    {
+      "name": "Warm buff terrazzo with worn grey grain",
+      "color": [
+        0.69,
+        0.645,
+        0.565
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "texture": "stone.webp"
+    },
+    {
+      "name": "Blue-black painted wrought iron",
+      "color": [
+        0.085,
+        0.1,
+        0.115
+      ],
+      "roughness": 0.4,
+      "metallic": 0.58,
+      "texture": ""
+    },
+    {
+      "name": "Aged honey-brown polished wood",
+      "color": [
+        0.49,
+        0.315,
+        0.145
+      ],
+      "roughness": 0.32,
+      "metallic": 0,
+      "texture": "wood.webp"
+    },
+    {
+      "name": "Mottled warm limestone plaster",
+      "color": [
+        0.73,
+        0.655,
+        0.545
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "texture": "plaster.webp"
+    },
+    {
+      "name": "Historic midnight-blue skirting",
+      "color": [
+        0.035,
+        0.055,
+        0.19
+      ],
+      "roughness": 0.62,
+      "metallic": 0.08,
+      "texture": ""
+    },
+    {
+      "name": "Frosted oval window",
+      "color": [
+        0.82,
+        0.9,
+        0.89
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "texture": "",
+      "emissive": true
+    },
+    {
+      "name": "Rooms wall photograph",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "texture": "journey-rooms.webp",
+      "poster": true
+    },
+    {
+      "name": "Private spa wall photograph",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "texture": "journey-spa.webp",
+      "poster": true
+    },
+    {
+      "name": "Restaurant wall photograph",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "texture": "journey-restaurant.webp",
+      "poster": true
+    },
+    {
+      "name": "Aged brass picture frames",
+      "color": [
+        0.48,
+        0.34,
+        0.17
+      ],
+      "roughness": 0.4,
+      "metallic": 0.72,
+      "texture": ""
+    }
+  ],
+  "mapBytes": 313968,
+  "budgets": {
+    "posterBytes": 81920,
+    "mapBytes": 524288,
+    "glbBytes": 5000000
+  },
+  "files": [
+    {
+      "name": "stone.webp",
+      "bytes": 111382,
+      "sha256": "b7e68deccb5f0f9906c448fee7b4cbf21afd77d233a5fcaaf57385c6de68aefb"
+    },
+    {
+      "name": "wood.webp",
+      "bytes": 43200,
+      "sha256": "f7c82f3f88e4afb7c8b9bf9a071a3a65f32655f0953d79117440a40634a473e5"
+    },
+    {
+      "name": "plaster.webp",
+      "bytes": 66048,
+      "sha256": "23c511a3cae31c993c5e3a804e88ae9b88e2a16a5c639e00697a3a8224765bb7"
+    },
+    {
+      "name": "journey-rooms.webp",
+      "bytes": 24566,
+      "sha256": "4ad4d774c2f7f49f65295b9e5134b9ac6fa6de36f4cb9ddef8555f8f5d200743"
+    },
+    {
+      "name": "journey-spa.webp",
+      "bytes": 27472,
+      "sha256": "c9e738b296f24faa9fd165e984e27fbfd4f9c78d84395e2eb15f666b127b6077"
+    },
+    {
+      "name": "journey-restaurant.webp",
+      "bytes": 41300,
+      "sha256": "96c5ed5c26815747882851c2d98eda5c2b367545c177ae6f26ba33e5da50efa5"
+    },
+    {
+      "name": "staircase.glb",
+      "bytes": 3594116,
+      "sha256": "fc836924610a3ebd84b2ad58d44c53619490be21d71e77a5b8fe8a8fca254602"
+    }
+  ]
+}
